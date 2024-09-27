@@ -39,11 +39,11 @@ if __name__ == "__main__":
     
     # Create a raw transaction first
     inputs = [{"txid": "f503eec4934c7fb5cdc8f82eaab024a357eecb0fed6838156dc9408e74c2ec9b", "vout": 0}]
-    outputs = [{"1RXD919mdLWUHYZ6tNaFHNbHb2CzDwHhu": 3.5}]
+    outputs = [{"add_recieve_address_her": 3.5}]  # 3.5 is amount test
     raw_transaction = blockchain.createrawtransaction(inputs, outputs)
     
     # Define private keys for signing (base58-encoded)
-    privkeys = ["L5gJQCGsSaD8Aqek6LpMzQq5PHwDdqp9ngv4mGuD7598RD9orkxS"]
+    privkeys = ["add_your_sender_private_key_her"]
     
     # Sign the raw transaction
     signed_transaction = blockchain.signrawtransactionwithkey(raw_transaction['result'], privkeys, prevtxs=None)
